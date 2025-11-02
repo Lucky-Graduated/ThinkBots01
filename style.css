@@ -145,5 +145,19 @@ nav a.accent-link{
 .mainContent {
   display: flex;
   justify-content: center;
-  text-align: left;
+  align-items: center;
+  text-align: start;
+}
+
+.mainContent img {
+  float: right;
+  border-radius: 50%;
+  width: 416;
+  height: 424;
+}
+
+#content {
+  padding-right: 10%;
+  padding-top: 10%;
+  font-size: 4rem;
 }
