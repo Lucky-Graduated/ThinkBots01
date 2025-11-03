@@ -164,6 +164,21 @@ nav a.accent-link{
 
 
 /* Features */
-.features {
-  color: #0071FF;
+#features {
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  font-size: 1.5rem;
+  
+}
+
+.container h2{
+  font-size: 3rem;
+}
+
+.container-boxes {
+  border: 2px solid white;
+  border-radius: 30px;
 }
