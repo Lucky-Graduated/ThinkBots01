@@ -165,7 +165,7 @@ nav a.accent-link{
 
 /* Features */
 #features {
-  background-color: #f8fafc;
+  background-color: #181a1b;
   text-align: center;
   padding: 60px 20px;
   font-family: "Poppins", sans-serif;
@@ -175,11 +175,11 @@ nav a.accent-link{
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #0f172a;
+  color: white;
 }
 
 #features .container p {
-  color: #64748b;
+  color: #9ba3ae;
   margin-bottom: 40px;
   font-size: 1rem;
 }
@@ -228,3 +228,16 @@ nav a.accent-link{
   color: #475569;
   line-height: 1.5;
 }
+
+
+/* review section */
+#reviews {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#reviews .container-boxes p {
+  font-weight: 700;
+}
+
