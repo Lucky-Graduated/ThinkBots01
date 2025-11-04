@@ -235,9 +235,31 @@ nav a.accent-link{
   text-align: center;
   padding: 60px 20px;
   font-family: "Poppins", sans-serif;
+  overflow: hidden; /* important to hide overflow */
 }
 
-#reviews .container-boxes p {
+.review-wrapper {
+  display: flex;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+.review-container {
+  display: flex;
+}
+
+.review-container p {
   font-weight: 700;
+  margin: 0 40px;
+  white-space: nowrap;
 }
 
+/* Keyframes */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
