@@ -345,3 +345,16 @@ nav a.accent-link{
 .social-icons a:hover {
   color: #fff;
 }
+
+
+/* About us section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.about img {
+  float: right;
+}
