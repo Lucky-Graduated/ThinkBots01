@@ -440,3 +440,180 @@ nav a.accent-link{
 .faq-item.active .arrow {
   transform: rotate(180deg);
 }
+
+/* pricing */
+
+.pricing-section {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pricing-header p {
+  color: #bdbdbd;
+  margin-bottom: 30px;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #bdbdbd;
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+}
+
+/* Switch button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #333;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0053ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: #111;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 30px;
+  width: 320px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  border-color: #3a3a3a;
+}
+
+.highlight {
+  border: 1px solid #0053ff;
+  box-shadow: 0 0 10px rgba(0, 83, 255, 0.2);
+}
+
+.pricing-card h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 22px;
+}
+
+.pricing-card ul li::before {
+  content: "✓";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.btn-outline, .btn-primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #777;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-primary {
+  background: #0053ff;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #003fcc;
+}
