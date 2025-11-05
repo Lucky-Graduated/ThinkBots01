@@ -358,3 +358,7 @@ nav a.accent-link{
 .about img {
   float: right;
 }
+
+.about p {
+  font-weight: 600;
+}
