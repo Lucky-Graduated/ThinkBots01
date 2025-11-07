@@ -39,3 +39,17 @@ const faqItems = document.querySelectorAll(".faq-item");
       item.classList.toggle("active");
     });
   });
+
+// pricing
+const billingSwitch = document.getElementById("billingSwitch");
+  const prices = document.querySelectorAll(".price");
+
+  billingSwitch.addEventListener("change", () => {
+    prices.forEach(price => {
+      if (price.textContent.includes("$49")) {
+        price.innerHTML = billingSwitch.checked ? "$499<span>/year</span>" : "$49<span>/month</span>";
+      } else if (price.textContent.includes("$99")) {
+        price.innerHTML = billingSwitch.checked ? "$999<span>/year</span>" : "$99<span>/month</span>";
+      }
+    });
+  });
